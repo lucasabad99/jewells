@@ -1,0 +1,64 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el header */
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 150px; /* Ajusta la altura del header */
+    background-color: #333; /* Color de fondo del header */
+}
+
+/* Estilos para el párrafo dentro del header */
+header p {
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Estilos para el main */
+.mainer {
+    background-image: url("../assets/photo-1491644386567-d98960637850.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilos para los botones */
+.mainer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para los enlaces dentro del botón */
+.mainer button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Efecto hover para los botones */
+.mainer button:hover {
+    background-color: #0056b3;
+}
