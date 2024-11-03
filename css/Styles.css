@@ -18,17 +18,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Turquesa a lila */
     width: 600px;
     height: 600px;
-    /*background: #0056b3;*/
     margin: auto;
     overflow: hidden;
     border-radius: 15px;
 }
 
 .header-container {
-   /* background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Turquesa a lila */
     position: relative;
     width: 100%;
     height: 100%;
@@ -39,7 +36,6 @@ body {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    z-index: 1;
 }
 
 .header-overlay {
@@ -53,7 +49,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 2;
 }
 
 .header-title {
@@ -63,8 +58,6 @@ body {
     font-family: 'Arial', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    z-index: 3;
-    /* Aumentar la sombra para mayor visibilidad */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 1.4), 0px 0px 2px rgba(255, 255, 255, 0.9);
     margin-bottom: 10px;
 }
@@ -74,14 +67,11 @@ body {
     font-size: 18px;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    z-index: 3;
-    /* Hacer la sombra más intensa */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 0px 0px 1px rgba(255, 255, 255, 0.2);
 }
 
 /* Estilos para el main */
 .mainer {
-    /*background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Turquesa a lila */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -95,7 +85,6 @@ body {
 
 /* Estilos para el footer */
 footer {
-    /*background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Turquesa a lila */
     padding: 20px;
     text-align: center;
 }
@@ -108,7 +97,7 @@ footer {
 }
 
 .mainer button {
-    font-family: 'Roboto', sans-serif; /* O usa 'Poppins' o 'Lato' */
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #b4585d, #d97f76);
     color: white;
     border: none;
@@ -130,59 +119,41 @@ footer {
     font-style: normal;
 }
 
-
 /* Efecto hover para los botones */
 .mainer button:hover {
-    background: linear-gradient(135deg, #d97f76, #b4585d); /* Cambia el orden de los colores para un efecto de transición */
-    transform: scale(1.025); /* Agrandamiento leve */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra exterior */
+    background: linear-gradient(135deg, #d97f76, #b4585d);
+    transform: scale(1.025);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efecto active (al hacer clic) */
 .mainer button:active {
-    transform: scale(0.98); /* Hace que el botón parezca presionado */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más leve */
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos responsive */
-@media only screen and (min-width: 768px) {
-    /* Ajustes para pantallas de hasta 768px (tabletas y móviles grandes) */
+/*
+@media only screen and (max-width: 768px) {
     .mainerdos {
-        width: 90%; /* Ancho ajustado para centrar mejor el contenido */
-        height: auto; /* Altura automática para adaptarse al contenido */
+        width: 90%;
+        height: auto;
+    }
+    .header-image {
+        display: block !important;
+        width: 100%;
+        height: auto;
     }
     .header-title {
-        font-size: 1.5rem; /* Fuente reducida para mejor legibilidad en pantallas medianas */
+        font-size: 1.5rem;
     }
     .header-message {
-        font-size: 1rem; /* Fuente ajustada para que el texto sea visible en pantallas más pequeñas */
+        font-size: 1rem;
     }
     .mainer button {
-        font-size: 0.9rem; /* Fuente reducida en los botones para adaptarse al espacio disponible */
-        padding: 12px 24px; /* Espaciado ajustado en los botones */
+        font-size: 0.9rem;
+        padding: 12px 24px;
     }
-}
-
-@media only screen and (min-width: 768px) {
-    /* Ajustes para pantallas de hasta 480px (móviles pequeños) */
-    .mainerdos {
-        width: 100%; /* Ocupa todo el ancho de la pantalla para un mejor uso del espacio */
-        height: auto; /* Altura automática para adaptarse al contenido */
-        border-radius: 0; /* Eliminación de bordes redondeados para maximizar el área de contenido */
-    }
-    .header-title {
-        font-size: 1.2rem; /* Fuente aún más reducida para pantallas pequeñas */
-    }
-    .header-message {
-        font-size: 0.9rem; /* Mantiene una fuente legible para textos secundarios */
-    }
-    .mainer button {
-        font-size: 0.8rem; /* Fuente pequeña para botones en dispositivos móviles */
-        padding: 10px 20px; /* Espaciado reducido para adaptarse al espacio limitado */
-    }
-}
-
-
+}*/
 
 
