@@ -145,3 +145,44 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más leve */
 }
 
+/* Estilos responsive */
+@media only screen and (min-width: 768px) {
+    /* Ajustes para pantallas de hasta 768px (tabletas y móviles grandes) */
+    .mainerdos {
+        width: 90%; /* Ancho ajustado para centrar mejor el contenido */
+        height: auto; /* Altura automática para adaptarse al contenido */
+    }
+    .header-title {
+        font-size: 1.5rem; /* Fuente reducida para mejor legibilidad en pantallas medianas */
+    }
+    .header-message {
+        font-size: 1rem; /* Fuente ajustada para que el texto sea visible en pantallas más pequeñas */
+    }
+    .mainer button {
+        font-size: 0.9rem; /* Fuente reducida en los botones para adaptarse al espacio disponible */
+        padding: 12px 24px; /* Espaciado ajustado en los botones */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Ajustes para pantallas de hasta 480px (móviles pequeños) */
+    .mainerdos {
+        width: 100%; /* Ocupa todo el ancho de la pantalla para un mejor uso del espacio */
+        height: auto; /* Altura automática para adaptarse al contenido */
+        border-radius: 0; /* Eliminación de bordes redondeados para maximizar el área de contenido */
+    }
+    .header-title {
+        font-size: 1.2rem; /* Fuente aún más reducida para pantallas pequeñas */
+    }
+    .header-message {
+        font-size: 0.9rem; /* Mantiene una fuente legible para textos secundarios */
+    }
+    .mainer button {
+        font-size: 0.8rem; /* Fuente pequeña para botones en dispositivos móviles */
+        padding: 10px 20px; /* Espaciado reducido para adaptarse al espacio limitado */
+    }
+}
+
+
+
+
