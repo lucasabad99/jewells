@@ -130,7 +130,18 @@ footer {
     font-style: normal;
 }
 
+
 /* Efecto hover para los botones */
 .mainer button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(135deg, #d97f76, #b4585d); /* Cambia el orden de los colores para un efecto de transición */
+    transform: scale(1.025); /* Agrandamiento leve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra exterior */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Efecto active (al hacer clic) */
+.mainer button:active {
+    transform: scale(0.98); /* Hace que el botón parezca presionado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más leve */
+}
+
