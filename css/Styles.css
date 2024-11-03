@@ -94,7 +94,7 @@ footer {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 580px;
+    width: 43vh;
 }
 
 /* Estilo para los enlaces dentro del botón */
