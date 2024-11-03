@@ -4,34 +4,88 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background: linear-gradient(135deg, #5c4152, #b76e79);
 
-/* Estilos para el header */
-/* Estilos para el header */
-header {
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 150px; /* Ajusta la altura del header */
-    background-color: #333; /* Color de fondo del header */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Para mantener el gradiente fijo al hacer scroll */
 }
 
-/* Estilos para el párrafo dentro del header */
-header p {
-    color: white; /* Color del texto */
-    font-size: 24px; /* Tamaño de fuente */
-    font-weight: bold; /* Negrita */
-    font-family: Arial, sans-serif; /* Tipo de fuente */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    text-transform: uppercase; /* Texto en mayúsculas */
+/* Estilos para el header */
+.mainerdos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Turquesa a lila */
+    width: 600px;
+    height: 600px;
+    /*background: #0056b3;*/
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.header-container {
+   /* background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Turquesa a lila */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(92, 65, 82, 0.1) 0%, rgba(150, 100, 130, 0.15) 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-title {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 3;
+    /* Aumentar la sombra para mayor visibilidad */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1.4), 0px 0px 2px rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+}
+
+.header-message {
+    color: white;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    z-index: 3;
+    /* Hacer la sombra más intensa */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 0px 0px 1px rgba(255, 255, 255, 0.2);
 }
 
 /* Estilos para el main */
 .mainer {
-    background-image: url("../assets/photo-1491644386567-d98960637850.jpeg");
+    /*background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Turquesa a lila */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,9 +93,23 @@ header p {
     gap: 20px;
 }
 
+/* Estilos para el footer */
+footer {
+    /*background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Turquesa a lila */
+    padding: 20px;
+    text-align: center;
+}
+
 /* Estilos para los botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .mainer button {
-    background-color: #007bff;
+    font-family: 'Roboto', sans-serif; /* O usa 'Poppins' o 'Lato' */
+    background: linear-gradient(135deg, #b4585d, #d97f76);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -50,12 +118,16 @@ header p {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 65vh;
 }
 
 /* Estilo para los enlaces dentro del botón */
 .mainer button a {
     color: white;
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Efecto hover para los botones */
